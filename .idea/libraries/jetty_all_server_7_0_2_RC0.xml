@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="jetty-all-server-7.0.2.RC0">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/jar" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$PROJECT_DIR$/jar/setuid" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/jar" recursive="false" />
+  </library>
+</component>
