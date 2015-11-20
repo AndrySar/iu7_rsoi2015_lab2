@@ -100,8 +100,8 @@ public class cars {
 
         try
         {
-            if(jetty_server.db.checkAccessToken(access_token).next())
-            {
+         //   if(jetty_server.db.checkAccessToken(access_token).next())
+         //   {
                 try {
 
                     ResultSet records = jetty_server.db.GetAllCars(per_page, page * per_page);
@@ -118,10 +118,10 @@ public class cars {
 
                 return Response.status(Response.Status.NOT_FOUND).build();
 
-            }else
-            {
-                return Response.status(Response.Status.FORBIDDEN).entity("403 Forbidden").build();
-            }
+        //    }else
+        //    {
+        //        return Response.status(Response.Status.FORBIDDEN).build();
+         //   }
         }catch (Exception ex)
         {
             return Response.serverError().build();
@@ -162,7 +162,7 @@ public class cars {
 
             }else
             {
-                return Response.status(Response.Status.FORBIDDEN).entity("403 Forbidden").build();
+                return Response.status(Response.Status.FORBIDDEN).build();
             }
         }catch (Exception ex)
         {
@@ -200,7 +200,7 @@ public class cars {
 
             }else
             {
-                return Response.status(Response.Status.FORBIDDEN).entity("403 Forbidden").build();
+                return Response.status(Response.Status.FORBIDDEN).build();
             }
         }catch (Exception ex)
         {
@@ -289,7 +289,7 @@ public class cars {
                 return Response.serverError().build();
             }else
             {
-                return Response.status(Response.Status.FORBIDDEN).type("text/plain").entity("403 Forbidden").build();
+                return Response.status(Response.Status.FORBIDDEN).entity("403 Forbidden").build();
             }
         }catch (Exception ex) {
             return Response.serverError().build();
@@ -323,7 +323,7 @@ public class cars {
                 return Response.status(Response.Status.NOT_MODIFIED).build();
             }else
             {
-                return Response.status(Response.Status.FORBIDDEN).type("text/plain").entity("403 Forbidden").build();
+                return Response.status(Response.Status.FORBIDDEN).build();
             }
         }catch (Exception ex) {
             return Response.serverError().build();
@@ -368,7 +368,7 @@ public class cars {
 
             }else
             {
-                return Response.status(Response.Status.FORBIDDEN).type("text/plain").entity("403 Forbidden").build();
+                return Response.status(Response.Status.FORBIDDEN).build();
             }
         }catch (Exception ex)
         {
@@ -416,7 +416,7 @@ public class cars {
 
             }else
             {
-                return Response.status(Response.Status.FORBIDDEN).type("text/plain").entity("403 Forbidden").build();
+                return Response.status(Response.Status.FORBIDDEN).build();
             }
         }catch (Exception ex)
         {
@@ -450,7 +450,7 @@ public class cars {
 
             }else
             {
-                return Response.status(Response.Status.FORBIDDEN).type("text/plain").entity("403 Forbidden").build();
+                return Response.status(Response.Status.FORBIDDEN).build();
             }
         }catch (Exception ex)
         {
@@ -498,7 +498,7 @@ public class cars {
                 return Response.notModified().build();
             }else
             {
-                return Response.status(Response.Status.FORBIDDEN).type("text/plain").entity("403 Forbidden").build();
+                return Response.status(Response.Status.FORBIDDEN).build();
             }
         }catch (Exception ex) {
             return Response.serverError().build();
@@ -578,7 +578,7 @@ public class cars {
                // return Response.status(Response.Status.NOT_MODIFIED).build();
             }else
             {
-                return Response.status(Response.Status.FORBIDDEN).type("text/plain").entity("403 Forbidden").build();
+                return Response.status(Response.Status.FORBIDDEN).build();
             }
         }catch (Exception ex) {
             return Response.serverError().build();

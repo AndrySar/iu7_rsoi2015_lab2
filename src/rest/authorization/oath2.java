@@ -94,7 +94,7 @@ public class oath2 {
                  //   Matcher m = p.matcher(redirect_uri);
 
                     if(!redirect_uri.contains("http://"))
-                        _currentResponse.sendRedirect("https://" + redirect_uri + "?code=" + map.get("code") + "&state=" + map.get("state"));
+                        _currentResponse.sendRedirect("http://" + redirect_uri + "?code=" + map.get("code") + "&state=" + map.get("state"));
                     else
                         _currentResponse.sendRedirect(redirect_uri + "?code=" + map.get("code") + "&state=" + map.get("state"));
 

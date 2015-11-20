@@ -1,0 +1,38 @@
+
+
+
+//обновление записи полностью
+curl -X PUT -i -H "access_token: be009289b447ca52826c40d10d54adba36b3a2bedeb46bd6d485d7c52bdce62b" "http://localhost:5000/sr/api/cars/52?model=werr&marks_id=8&power=450&mileage=56444&year=2000&color=black&drive=rear&info=frrr&cost=34222"
+
+
+// Обновление автомобилей
+curl -X PATCH -i -H "access_token: be009289b447ca52826c40d10d54adba36b3a2bedeb46bd6d485d7c52bdce62b""http://localhost:5000/sr/api/cars/22?model=X8"
+
+
+//добавление нового автомобиля
+curl -i -H "access_token: be009289b447ca52826c40d10d54adba36b3a2bedeb46bd6d485d7c52bdce62b" -X POST "http://localhost:5000/sr/api/cars?model=m5&mileage=23133&color=black&drive=rear&power=200&marks_id=3&year=2015&cost=10000&info=Good"
+
+
+//Удаление 
+curl -X DELETE -i -H "access_token: be009289b447ca52826c40d10d54adba36b3a2bedeb46bd6d485d7c52bdce62b" "http://localhost:5000/sr/api/cars/9"
+
+
+Oath авторизация:
+
+client_id=552ca7f00be7044aa0beb10be3a36f51
+
+secret_client=5997e22e88aaf7bb2a717f1bfd5b5fdc5997e22e88aaf7bb2a717f1bfd5b5fdc
+
+// Получение code
+http://localhost:5000/sr/oath/authorize?client_id=552ca7f00be7044aa0beb10be3a36f51&redirect_uri=http://localhost:5000/oath
+
+// Получение access_token
+http://localhost:5000/sr/oath/access_token?client_id=552ca7f00be7044aa0beb10be3a36f51&secret_client=5997e22e88aaf7bb2a717f1bfd5b5fdc5997e22e88aaf7bb2a717f1bfd5b5fdc&code=7014fc0522de15b73cc7cfc0cdf740f3
+
+
+https://yandex.ru/search
+
+
+http://localhost:5000/sr/oath/access_token?client_id=552ca7f00be7044aa0beb10be3a36f51&secret_client=5997e22e88aaf7bb2a717f1bfd5b5fdc5997e22e88aaf7bb2a717f1bfd5b5fdc&code=9d5161a4850346dc76b9bb1b450f359c&state=2033655909
+
+

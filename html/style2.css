@@ -1,0 +1,89 @@
+.header {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+    width:800px;
+    height:100px;
+    border:1px solid #000000;
+    background:#cccccc;
+    }
+.menu {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+    width:800px;
+    height:30px;
+    border:1px solid #000000;
+    background:#cccccc;
+    }
+.pages { 
+    margin-left:auto; 
+    margin-right:auto; 
+    width:800px;
+    }
+.content {
+    margin-right:200px;
+    width:606px;
+    height:300px;
+    border:1px solid #000000;
+    background:#cccccc;
+    float:right;
+    }
+.sidebar {
+    width:180px;
+    height:300px;
+    border:1px solid #000000;
+    background:#cccccc;
+    float:right;
+    }
+.foot {
+    clear:both;
+    }
+.footer {
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    width:800px;
+    height:50px;
+    border:1px solid #000000;
+    background:#cccccc;
+    }
+
+    body {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.main-menu {
+    width: 180px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-menu a {
+    display: block;
+    margin-bottom: -1px;
+    padding: 8px 14px;
+    color: #0088CC;
+    text-decoration: none;
+    border: 1px solid #E5E5E5;
+}
+
+.main-menu a:hover {
+    background: #F5F5F5;
+}
+
+.main-menu > li {
+
+}
+
+/* Подменю */
+
+.main-menu .sub-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #F
